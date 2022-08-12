@@ -10,7 +10,7 @@ jobs:
       - name: Install dependencies
         run: |
           apt install python3-pip -y
-          python3 -m pip install 
+          apt-get -y install python3-pip 
           pip3 install flake8
           pip3 install pylint
           if [ -f requirements.txt ]; then pip3 install --target=/usr/bin -r requirements.txt; fi 
